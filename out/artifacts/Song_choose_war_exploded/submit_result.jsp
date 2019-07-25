@@ -11,7 +11,11 @@
     <title>提交结果</title>
 </head>
 <body>
-<p>您的歌曲查询码</p><br>
-    <%=request.getAttribute("uuid")%>
+<div style="text-align: center;padding: 300px">
+    <p>您的歌曲查询码</p><br>
+    <%=request.getAttribute("uuid")%><br>
+    <a href="<%=request.getContextPath()%>/index.jsp">返回首页</a>
+</div>
+
 </body>
 </html>

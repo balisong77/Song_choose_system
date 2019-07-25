@@ -15,6 +15,26 @@ public class Info {
     private String singer;
     private String uuid;
     private int status_code;
+    private int is_anonymous;
+    private String to_college;
+
+    public int getIs_anonymous() {
+        return is_anonymous;
+    }
+
+    public void setIs_anonymous(int is_anonymous) {
+        this.is_anonymous = is_anonymous;
+    }
+
+    public String getTo_college() {
+        return to_college;
+    }
+
+    public void setTo_college(String to_college) {
+        this.to_college = to_college;
+    }
+
+
 
     public String getName() {
         return name;

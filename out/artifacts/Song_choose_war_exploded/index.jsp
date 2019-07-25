@@ -12,9 +12,12 @@
 </head>
 <body>
 
-<a href="<%=request.getContextPath()%>/submit.jsp">提交</a><br>
-<a href="<%=request.getContextPath()%>/admin.jsp">管理</a><br>
-<a href="<%=request.getContextPath()%>/query.jsp">查询</a><br>
+<div style="text-align: center;padding: 300px">
+    <a href="<%=request.getContextPath()%>/submit.jsp">提交</a><br>
+    <a href="<%=request.getContextPath()%>/admin.jsp">管理</a><br>
+    <a href="<%=request.getContextPath()%>/query.jsp">查询</a><br>
+</div>
+
 
 </body>
 </html>

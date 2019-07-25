@@ -8,6 +8,7 @@ import utils.generateUuid;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -49,8 +50,10 @@ public class udoController extends HttpServlet {
         String classname = req.getParameter("classname");
         String phoneNum = req.getParameter("phoneNum");
         String toname = req.getParameter("toname");
-        String message= req.getParameter("message");
-        String datetime= req.getParameter("datetime");
+        String message = req.getParameter("message");
+        String datetime = req.getParameter("datetime");
+        String to_college = req.getParameter("to_college");
+        String is_anonymous = req.getParameter("is_anonymous")==null?"0":"1";
         /**
          * 正则表达式来滤去日期中的特殊字符
          */
@@ -68,7 +71,7 @@ public class udoController extends HttpServlet {
          * 调用对应controller的方法
          */
         InfoService infoService = FactoryService.getInfoService();
-        infoService.save(song,singer,name,phoneNum,college,classname,toname,message,date_str,uuid,status_code);
+        infoService.save(song,singer,name,phoneNum,college,classname,toname,message,date_str,uuid,status_code,to_college,is_anonymous);
 
         /**
          * 转发来返回结果
@@ -106,5 +109,25 @@ public class udoController extends HttpServlet {
         String url = req.getContextPath();
         resp.sendRedirect(url+"/admin.jsp");
     }
-
+    private void alter(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
+        String id = req.getParameter("id");
+        String status = req.getParameter("status");
+        InfoService infoService = FactoryService.getInfoService();
+        infoService.alterStatuscode(status,id);
+        String url = req.getContextPath();
+        resp.sendRedirect(url+"/admin.jsp");
+    }
+    private void login(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+        HttpSession session = req.getSession();
+        if(username.equals("admin")&&password.equals("admin")){
+            session.setAttribute("is_login","true");
+            req.getRequestDispatcher("/admin.jsp").forward(req,resp);
+        }
+        else{
+            session.setAttribute("login","false");
+            req.getRequestDispatcher("/admin_login.jsp").forward(req,resp);
+        }
+    }
 }

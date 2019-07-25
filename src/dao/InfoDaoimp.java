@@ -22,7 +22,7 @@ public class InfoDaoimp extends BaseDao<Info>{
      */
     public int save(Object... args){
         int i;
-        String sql = "INSERT INTO `information`(`song`,`singer`,`name`,`phone_num`,`college_name`,`class_name`,`to_name`,`message`,`date_time`,`uuid`,`status_code`) VALUES(?,?,?,?,?,?,?,?,?,?,?);";
+        String sql = "INSERT INTO `information`(`song`,`singer`,`name`,`phone_num`,`college_name`,`class_name`,`to_name`,`message`,`date_time`,`uuid`,`status_code`,`to_college`,`is_anonymous`) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?);";
         i = update(sql,args);
         return i;
     }
@@ -41,6 +41,17 @@ public class InfoDaoimp extends BaseDao<Info>{
         List<Info> list = getList(sql);
         return list;
     }
+    public List<Info> getAllComingUnhaddel(){
+        String sql = "SELECT * FROM `information` WHERE date_time > NOW() AND `status_code` = 1 ORDER BY `date_time` ASC;";
+        List<Info> list = getList(sql);
+        return list;
+    }
+    public List<Info> getAllHaddeled(){
+        String sql = "SELECT * FROM `information` WHERE date_time < NOW() OR `status_code` != 1 ORDER BY `date_time` DESC;";
+        List<Info> list = getList(sql);
+        return list;
+    }
+
     public int deleteInfoByid(String id){
         String sql = "DELETE From `information` where id = ?;";
         int i = update(sql,id);
@@ -56,5 +67,11 @@ public class InfoDaoimp extends BaseDao<Info>{
         int i =update(sql,date,id);
         return i;
     }
+    public int alterStatuscode(String status,String id){
+        String sql = "UPDATE `information` SET `status_code` = ? WHERE `id`=?;";
+        int i = update(sql,status,id);
+        return i;
+    }
+
 
 }

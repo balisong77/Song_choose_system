@@ -19,22 +19,28 @@
         System.out.println(uuid);
         InfoDaoimp dao = FactoryDao.getInfoDaoimp();
         Info i = dao.getInfoByuuid(uuid);
-        String[] status = {"","待处理","已播放","被退回"};
+        String[] status = {"","待处理","已播放","被退回","已过期"};
     %>
-    <table>
-        <tr>
-            <th>歌名</th>
-            <th>歌手</th>
-            <th>日期</th>
-            <th>播放状态</th>
-        </tr>
+    <div style="text-align: center;padding: 300px">
+        <table>
+            <tr>
+                <th>歌名</th>
+                <th>歌手</th>
+                <th>日期</th>
+                <th>播放状态</th>
+            </tr>
 
-        <tr>
-            <td><%=i.getSong()%></td>
-            <td><%=i.getSinger()%></td>
-            <td><%=i.getDate_time()%></td>
-            <td><%=status[i.getStatus_code()]%></td>
-        </tr>
-    </table>
+            <tr>
+                <td><%=i.getSong()%></td>
+                <td><%=i.getSinger()%></td>
+                <td><%=i.getDate_time()%></td>
+                <td><%=status[i.getStatus_code()]%></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <a href="<%=request.getContextPath()%>/index.jsp">返回首页</a>
+    </div>
+
 </body>
 </html>

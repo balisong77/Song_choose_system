@@ -47,4 +47,10 @@ public class InfoService {
         return i;
     }
 
+    public int alterStatuscode(String status,String id){
+        InfoDaoimp dao = FactoryDao.getInfoDaoimp();
+        int i = dao.alterStatuscode(status,id);
+        return i;
+    }
+
 }

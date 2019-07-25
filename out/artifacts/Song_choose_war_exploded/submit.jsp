@@ -21,8 +21,10 @@
       班级:<input type="text" name="classname"><br>
       手机号码:<input type="text" name="phoneNum"><br>
       想送给谁:<input type="text" name="toname"><br>
+      ta的所在的学院:<input type="text" name="to_college"><br>
       想说的话:<input type="text" name="message"><br>
       希望播放的日期<input type="datetime-local" name="datetime"><br>
+      是否匿名:<input type="checkbox" name="is_anonymous"><br>
       <input type="submit" value="submit" name="submit">
     </form>
 
