@@ -6,20 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2c53843-bc81-4c3c-936b-a93b1ba14914" name="Default Changelist" comment="v_1.1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Song_choose_war/Song_choose_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Song_choose_war/Song_choose_war.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Song_choose_war_exploded/WEB-INF/classes/dao/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Song_choose_war_exploded/WEB-INF/classes/dao/BaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Song_choose_war_exploded/WEB-INF/classes/test/dao/BaseDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Song_choose_war_exploded/WEB-INF/classes/test/dao/BaseDoatest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Song_choose_war_exploded/WEB-INF/classes/utils/jdbcUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Song_choose_war_exploded/WEB-INF/classes/utils/jdbcUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Song_choose/dao/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Song_choose/dao/BaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Song_choose/test/dao/BaseDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Song_choose/test/dao/BaseDoatest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Song_choose/utils/jdbcUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Song_choose/utils/jdbcUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/jdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/jdbcUtils.java" afterDir="false" />
-    </list>
+    <list default="true" id="f2c53843-bc81-4c3c-936b-a93b1ba14914" name="Default Changelist" comment="v_1.1" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -221,7 +208,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="569" />
     <option name="y" value="90" />
     <option name="width" value="1083" />
@@ -520,7 +507,7 @@
       <workItem from="1564062054415" duration="3928000" />
       <workItem from="1564095981426" duration="4314000" />
       <workItem from="1564148387573" duration="3020000" />
-      <workItem from="1564152311696" duration="553000" />
+      <workItem from="1564152311696" duration="872000" />
     </task>
     <task id="LOCAL-00001" summary="v_1.1">
       <created>1564147834889</created>
@@ -565,7 +552,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73997000" />
+    <option name="totallyTimeSpent" value="74316000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -578,7 +565,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48142165" visible="true" weight="0.19296375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -590,7 +576,7 @@
       <window_info id="Web" order="7" sideWeight="0.51857835" side_tool="true" weight="0.2739872" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.75073314" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.75073314" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.32104123" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
