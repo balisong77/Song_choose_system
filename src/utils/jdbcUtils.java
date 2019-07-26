@@ -11,6 +11,7 @@ import java.sql.SQLException;
 
 public class jdbcUtils {
 
+
     public static Connection getConnection() throws SQLException {
         DataSource dataSource = new ComboPooledDataSource("mysql");
         Connection connection = dataSource.getConnection();
